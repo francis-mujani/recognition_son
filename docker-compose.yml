@@ -1,10 +1,10 @@
-version: "3.6"
-
-services:
-    recognise-son:
-        build:
-            context: .
-            dockerfile: Dockerfile
-        container_name: recognise-music
-        ports:
-          - 5002:5000
+- task: DockerCompose@0
+  displayName: Push services
+  inputs:
+    action: Push services
+    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    azureContainerRegistry: $(azureContainerRegistry)
+    dockerComposeFile: docker-compose.yml
+    projectName: $(Build.Repository.Name)
+    qualifyImageNames: true
+    additionalImageTags: $(Build.BuildId)

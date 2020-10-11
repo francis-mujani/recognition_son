@@ -12,5 +12,3 @@
 1. Copy some `.mp3` audio files into `mp3/` directory
 1. Run `$ make fingerprint-songs` to analyze audio files & fill your db with hashes
 1. Start play any of audio file (from any source) from `mp3/` directory, and run (parallely) `$ make recognize-listen seconds=5`
-
-![](http://new.tinygrab.com/7020c0e8b0393eec4a18c62170458c029577d378c2.png)

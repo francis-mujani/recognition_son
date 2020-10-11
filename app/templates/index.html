@@ -2,21 +2,36 @@
 
 {% block content %}
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <h1 class="fit mb-3">FITMUSIC</h1>
-      <hr>
-      <div class="container">
-        <button class="btn btn-primary" id="submit" onclick="submit_message();"> START </button>
-        <img src="../static/imgs/01.jpg" alt="">
-        <div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
-        <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
-        <div id="df" class="alert alert-primary" role="alert"></div>
+<div class="main">
 
+  <div class="menu">
+      <a href="#"><i class="fas fa-arrow-left"></i></a>
+      <h3>FIT MUSIC BY F.MUJANI</h3>
+      <a href="#"><i class="fas fa-bars"></i></a>
+  </div>
+
+  <div class="image"></div>
+
+  <div class="info">
+      <h4 id="successAlert">Love you</h4>
+      <h4 id="errorAlert" style="display:none;"></h4>
+      <p id="successAlert">Christ Brown feat Rick Ross</p> 
+  </div>
+
+
+  <div class="range">
+      <div class="time">
+          <p>1:17</p>
+          <p>5:40</p>
       </div>
-    </div>
+      <input type="range" id="range">
+  </div>
+  <div class="play">
+      <a href="#"><i class="fas fa-backward"></i></a>
+      <a href="#" id="submit" onclick="submit_message();"><i class="fas fa-play" ></i></a>
+      <a href="#"><i class="fas fa-forward"></i></a>
   </div>
 </div>
+
 
 {% endblock %}

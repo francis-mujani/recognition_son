@@ -4,7 +4,7 @@ import sys
 import libs
 import libs.fingerprint as fingerprint
 import argparse
-
+import re
 from argparse import RawTextHelpFormatter
 # from itertools import izip_longest
 try:
@@ -219,9 +219,15 @@ def run():
       song['OFFSET'], song['OFFSET_SECS'],
       song['CONFIDENCE']
     ))
+
+    # Regex pour virer le .MP3
+    pattern = re.compile(r"[A-Z][a-z]*")
+    result = pattern.search(song['SONG_NAME'])
+    print(result.group())
     return song
+
   else:
-    msg = {'error':' ** not matches found at all'}
+    msg = {'error':'Not matches found at all'}
     print(colored(msg['error'], 'red'))
     return msg
 #if __name__ == '__main__':

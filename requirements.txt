@@ -1,0 +1,8 @@
+numpy>=1
+termcolor
+pyaudio
+wave
+pydub
+flask
+Flask-RESTful
+pandas

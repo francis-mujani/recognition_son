@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+    recognise-son:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: recognise-music
+        ports:
+          - 5002:5000

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1 class="fit mb-3">FITMUSIC</h1>
+      <hr>
+      <div class="container">
+        <button class="btn btn-primary" id="submit" onclick="submit_message();"> START </button>
+        <img src="../static/imgs/01.jpg" alt="">
+        <div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+        <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+        <div id="df" class="alert alert-primary" role="alert"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

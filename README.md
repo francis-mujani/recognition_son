@@ -1,7 +1,7 @@
 # PROJET FINAL RECONNAISSANCE MUSICALE
 
 
-## Comment lancer le projet 
+## Comment lancer le projet
 
 1. Run `$ make clean reset` to clean & init database struct
 1. Run `$ make tests` to make sure that everything is properly configurated
